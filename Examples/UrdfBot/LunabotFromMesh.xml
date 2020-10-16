@@ -2,25 +2,25 @@
 <robot name="physics">
 
   <material name="rubber">
-    <unreal_material path="Material'/AirSim/VehicleAdv/SUV/AutomotiveMaterials/Materials/Reflector/M_Reflector.M_Reflector'"/>
+    <unreal_material path="Material'/AirSim/Content/VehicleAdv/SUV/AutomotiveMaterials/Materials/Reflector/M_Reflector.uasset'"/>
   </material>
   <material name="metal">
-    <unreal_material path="Material'/AirSim/VehicleAdv/SUV/AutomotiveMaterials/Materials/Metal/M_Metal.M_Metal'"/>
+    <unreal_material path="Material'/AirSim/Content/VehicleAdv/SUV/AutomotiveMaterials/Materials/Metal/M_Metal.uasset'"/>
   </material>
     <material name="reflector">
-    <unreal_material path="Material'/AirSim/VehicleAdv/SUV/AutomotiveMaterials/Materials/Reflector/M_Reflector.M_Reflector'"/>
+    <unreal_material path="Material'/AirSim/Content/VehicleAdv/SUV/AutomotiveMaterials/Materials/Reflector/M_Reflector.uasset'"/>
   </material>
 
   <link name="top_ring">
     <visual>
       <geometry>                        <!--UPDATE THE PATHS TO POINT TO THE ABSOLUTE LOCATION OF THE STL FILES ON DISK-->
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\Frame3.STL" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\Frame3.STL" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
     <collision>
         <geometry>
-            <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\Frame3.STL" reverse_normals="true" scale_factor="100" dynamic_collision_type="vhacd" vhacd_concavity="0.2" vhacd_output_folder_path="F:\vhacd"/>
+            <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\Frame3.STL" reverse_normals="true" scale_factor="100" dynamic_collision_type="vhacd" vhacd_concavity="0.2" vhacd_output_folder_path="D:\UrdfSim\Examples\UrdfBot\LunabotParts\vhacd_bucket"/>
         </geometry>
     </collision>
     <inertial>
@@ -32,7 +32,7 @@
   <link name="back_left_pivot">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
@@ -74,7 +74,7 @@
   <link name="back_right_pivot">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
@@ -116,7 +116,7 @@
   <link name="front_left_pivot">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
@@ -158,7 +158,7 @@
   <link name="front_right_pivot">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\SquareWheelPivot.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
@@ -200,7 +200,7 @@
   <link name="h_bar">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\HBar.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\HBar.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
@@ -221,13 +221,13 @@
   <link name="bucket">
     <visual>
       <geometry>
-        <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\BucketProperCenter.stl" reverse_normals="true" scale_factor="100"/>
+        <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\BucketProperCenter.stl" reverse_normals="true" scale_factor="100"/>
       </geometry>
       <material name="metal"/>
     </visual>
     <collision>
         <geometry>
-            <mesh type="stl_ascii" location="F:\SampleUrdf\LunabotParts\BucketProperCenter.STL" reverse_normals="true" scale_factor="100" dynamic_collision_type="vhacd" vhacd_concavity="0.2" vhacd_output_folder_path="F:\vhacd_bucket"/>
+            <mesh type="stl_ascii" location="D:\UrdfSim\Examples\UrdfBot\LunabotParts\BucketProperCenter.STL" reverse_normals="true" scale_factor="100" dynamic_collision_type="vhacd" vhacd_concavity="0.2" vhacd_output_folder_path="D:\UrdfSim\Examples\UrdfBot\LunabotParts\vhacd_bucket"/>
         </geometry>
     </collision>
     <inertial>
